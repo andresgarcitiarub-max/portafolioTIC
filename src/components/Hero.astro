@@ -1,24 +1,24 @@
 ---
 // Hero.astro
 ---
-<section id="inicio" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-slate-50">
+<section id="inicio" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-slate-50 dark:bg-slate-950">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
     <div class="text-center max-w-4xl mx-auto flex flex-col items-center">
-      <img src="/imagen-0.png" alt="Andres David Garcia Rubio" class="w-32 h-32 sm:w-40 sm:h-40 rounded-full shadow-xl border-4 border-white mb-8 object-cover" />
-      <p class="text-blue-600 font-bold tracking-wider uppercase mb-4 text-sm sm:text-base">Hola, soy</p>
-      <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight text-slate-900 mb-6 group">
+      <img src="/imagen-0.png" alt="Andres David Garcia Rubio" class="w-32 h-32 sm:w-40 sm:h-40 rounded-full shadow-xl border-4 border-white dark:border-slate-800 mb-8 object-cover" />
+      <p class="text-blue-600 dark:text-blue-400 font-bold tracking-wider uppercase mb-4 text-sm sm:text-base">Hola, soy</p>
+      <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight text-slate-900 dark:text-white mb-6 group">
         ANDRES DAVID <br class="hidden sm:block" />
-        <span class="text-blue-600 relative inline-block">
+        <span class="text-blue-600 dark:text-blue-400 relative inline-block">
           GARCIA RUBIO
-          <span class="absolute -bottom-2 left-0 w-full h-2 bg-blue-100 -z-10 group-hover:h-6 transition-all duration-300"></span>
+          <span class="absolute -bottom-2 left-0 w-full h-2 bg-blue-100 dark:bg-blue-900/50 -z-10 group-hover:h-6 transition-all duration-300"></span>
         </span>
       </h1>
       
-      <p class="text-xl sm:text-2xl text-slate-600 font-medium mb-4">
+      <p class="text-xl sm:text-2xl text-slate-600 dark:text-slate-400 font-medium mb-4">
         Desarrollador de páginas web básicas.
       </p>
 
-      <blockquote class="text-lg sm:text-xl text-slate-500 italic mb-10 max-w-2xl mx-auto border-l-4 border-blue-400 pl-4 py-2 bg-blue-50/50 rounded-r-lg">
+      <blockquote class="text-lg sm:text-xl text-slate-500 dark:text-slate-400 italic mb-10 max-w-2xl mx-auto border-l-4 border-blue-400 dark:border-blue-500 pl-4 py-2 bg-blue-50/50 dark:bg-blue-900/20 rounded-r-lg">
         🧠 "El silencio dice lo que el ego calla."
       </blockquote>
 
@@ -26,8 +26,8 @@
         <a href="#contacto" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold transition-all shadow-lg shadow-blue-600/30 hover:shadow-blue-600/50 hover:-translate-y-1">
           Contáctame
         </a>
-        <a href="/andres-garcia-cv.pdf" download="Andres_Garcia_CV.pdf" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-white hover:bg-slate-50 text-slate-800 font-bold border-2 border-slate-200 hover:border-blue-200 flex items-center justify-center gap-2 transition-all hover:-translate-y-1 shadow-sm">
-          <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <a href="/andres-garcia-cv.pdf" download="Andres_Garcia_CV.pdf" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-800 dark:text-white font-bold border-2 border-slate-200 dark:border-slate-700 hover:border-blue-200 dark:hover:border-blue-700 flex items-center justify-center gap-2 transition-all hover:-translate-y-1 shadow-sm">
+          <svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
           </svg>
           Descargar CV
@@ -35,8 +35,6 @@
       </div>
     </div>
   </div>
-  
-  <!-- Decorative background elements -->
-  <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-tr from-blue-100 to-transparent rounded-full blur-3xl -z-10 opacity-70"></div>
-  <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-slate-200 rounded-full blur-3xl -z-10 opacity-40 translate-x-1/2 -translate-y-1/4"></div>
+  <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-tr from-blue-100 dark:from-blue-900/20 to-transparent rounded-full blur-3xl -z-10 opacity-70"></div>
+  <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-slate-200 dark:bg-slate-800 rounded-full blur-3xl -z-10 opacity-40 translate-x-1/2 -translate-y-1/4"></div>
 </section>
