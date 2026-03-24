@@ -1,0 +1,31 @@
+---
+// TechStack.astro
+const skills = [
+  { name: "Python", category: "Backend / Lógica" },
+  { name: "HTML / CSS", category: "Frontend" },
+  { name: "JavaScript", category: "Básico" },
+  { name: "Micro:bit", category: "Hardware Educativo" },
+  { name: "Arduino", category: "Básico" },
+  { name: "Uso de APIs", category: "Nivel Inicial" },
+  { name: "Hardware", category: "Ensamblaje y Mantenimiento" },
+  { name: "Ensamblaje de PCs", category: "Hardware" }
+];
+---
+
+<section id="tech-stack" class="py-20 lg:py-32 bg-slate-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mb-4">Tech Stack & Habilidades</h2>
+      <p class="text-lg text-slate-600">Herramientas y tecnologías con las que trabajo y aprendo continuamente.</p>
+    </div>
+    
+    <div class="flex flex-wrap justify-center gap-4">
+      {skills.map(skill => (
+        <div class="group bg-white px-6 py-4 rounded-xl shadow-sm border border-slate-200 hover:border-blue-400 hover:shadow-md transition-all cursor-default flex flex-col items-center">
+          <span class="text-lg font-bold text-slate-800 group-hover:text-blue-600 transition-colors">{skill.name}</span>
+          <span class="text-xs text-slate-400 mt-1 uppercase tracking-wider font-semibold">{skill.category}</span>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

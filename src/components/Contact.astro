@@ -1,0 +1,42 @@
+---
+// Contact.astro
+---
+
+<section id="contacto" class="py-20 lg:py-32 bg-slate-50">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mb-4">Ponte en Contacto</h2>
+      <p class="text-lg text-slate-600 max-w-2xl mx-auto">¿Tienes una idea, sugerencia o proyecto en mente? Escríbeme y estaré encantado de responder.</p>
+    </div>
+    
+    <div class="bg-white rounded-3xl p-8 md:p-12 border border-slate-200 shadow-sm">
+      <form action="https://formspree.io/f/TU_CODIGO_AQUI" method="POST" class="space-y-6" id="contact-form">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <label for="name" class="block text-sm font-bold text-slate-700 mb-2">Nombre completo</label>
+            <input type="text" id="name" name="name" required class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all placeholder-slate-400" placeholder="Ej. Juan Pérez">
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-bold text-slate-700 mb-2">Correo electrónico</label>
+            <input type="email" id="email" name="email" required class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all placeholder-slate-400" placeholder="tucorreo@ejemplo.com">
+          </div>
+        </div>
+        
+        <!-- Hidden input to direct user to a specific page or just capture subject if we added one -->
+        <input type="hidden" name="_subject" value="Nuevo mensaje desde el Portafolio">
+        
+        <div>
+          <label for="message" class="block text-sm font-bold text-slate-700 mb-2">Mensaje</label>
+          <textarea id="message" name="message" rows="5" required class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none placeholder-slate-400" placeholder="Escribe tu mensaje aquí..."></textarea>
+        </div>
+        
+        <button type="submit" class="w-full sm:w-auto px-10 py-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-lg shadow-lg shadow-blue-600/30 hover:shadow-blue-600/50 hover:-translate-y-1 transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-500 flex items-center justify-center gap-2 group mx-auto md:mx-0">
+          Enviar Mensaje
+          <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
